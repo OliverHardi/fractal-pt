@@ -97,7 +97,7 @@ vec2 sdf(vec3 p){
     float circle = length(p) - 2.;
     float orbit = 10000.0;
     
-    ${getFractal(2)}
+    ${getFractal(0)}
 
     // dist = max(circle, dist);
     // dist = circle;
@@ -323,5 +323,6 @@ void main(){
 
     fragColor = vec4(col, 1.);
 }
+
 
 `;
