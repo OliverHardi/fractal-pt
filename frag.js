@@ -99,7 +99,7 @@ vec2 sdf(vec3 p){
     
     ${getFractal(0)}
 
-    // dist = max(circle, dist);
+    dist = max(circle, dist);
     // dist = circle;
     return vec2(dist, orbit);
 }
@@ -273,7 +273,7 @@ void main(){
             }
         }
 
-        radiance += intersection.t < 0.5 ? vec3(0.6, 0.55, 0.34) : vec3(0.);
+        // radiance += intersection.t < 0.5 ? vec3(0.6, 0.55, 0.34) : vec3(0.);
 
         // radiance += mix(vec3(1.), vec3(0.), intersection.t);
         // vec3 alb = mix(vec3(0.7, 0.01, 0.04), vec3(0.4, 0.16, 0.72), intersection.t);
